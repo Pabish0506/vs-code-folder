@@ -1,0 +1,175 @@
+html body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-container{
+    background-color: rgb(43, 168, 190);
+}
+
+/* DESKTOP VIEW */
+
+
+
+
+@media (min-width:600px){
+    
+
+    nav{
+        width: 95%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .logo{
+        height: 15vh;
+    }
+
+
+
+    .logo img{
+        height: 100%;
+        clip-path: circle(35%);
+    }
+
+
+    .navbar-items{
+       width: 40%;
+       display: flex  ;
+    }
+
+
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+    }
+
+
+
+
+
+    .navbar-items ul li{
+        list-style-type: none;
+    }
+    .navbar-items ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+    }
+
+
+    .nav-links li a:hover{
+        color: aliceblue;
+        font-size: 22px;
+    } 
+    
+}
+
+
+
+@media screen and (min-width:600px) {
+    .btn{
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width:942px)
+{
+    .navbar-items{
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (max-width:746px) {
+
+    .navbar-items{
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+/* mobile view */
+
+@media (max-width:600px){
+
+    .nav-container{
+        width: 100%;
+    }
+    
+    .navbar-items{
+        width: 85%;
+    }
+
+    .nav-links{
+        width: 100%;
+     }
+
+    .nav-links li{
+        list-style-type: none;
+        margin-top: 25px;
+        border-bottom: 1px solid white;
+        padding-bottom: 15px;
+    }
+    .nav-links li a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    .nav-links li a:hover{
+        color: white;
+    }
+
+
+
+    .logo{
+        height: 15vh;
+    }
+
+
+
+    .logo img{
+        height: 100%;
+        clip-path: circle(35%);
+    }
+    
+    .btn{
+        border: none;
+        background: none;
+        border: 1px solid white;
+        padding: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 15px;
+        cursor: pointer;
+    }
+    .btn span{
+        display: block;
+        width: 20px;
+        border-top: 1px solid white;
+    }
+    .btn span:not(:last-child){
+        margin-bottom: 5px;
+    }
+    .hide{
+        display: none;
+    }
+}
