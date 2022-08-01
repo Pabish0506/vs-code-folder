@@ -29,10 +29,11 @@ nav{
 }
 .nav-bar .content{
     width: 55%;
+    margin-right: 25px;
     /* background-color: #fff; */
 }
 .nav-bar .content .items{
-    margin-right: 25px;
+    
     height: 100%;
     display: flex;
     align-items: center;
@@ -146,6 +147,52 @@ nav{
         font-size: 22px;
     }
 
+}
+@media screen and (max-width:558px){
+    nav{
+        display: block;
+        
+    }
+    .logo{
+        height: 15vh;   
+        width: 150px;
+        padding-bottom: 30px;
+        padding-top: 15px;
+
+    }
+    .logo img{
+        height: 86%;
+        margin-top:7px;
+        margin-left: 9px;
+    }
+    .nav-bar .content{
+        width: 100%; 
+        background-color: #6d5b6d;
+        padding-left: 25px;
+    }
+    .nav-bar nav .content .items{
+        height: 40vh;
+        display: block;
+        padding: 20px 0px;
+    }
+    
+    .nav-bar nav .content .items li{
+        list-style-type: none;
+        margin-bottom: 30px;
+        
+    }
+    
+    .nav-bar .content .items li a{
+        
+        text-decoration: none;
+        font-size: 20px;
+        color: aliceblue;
+        opacity: .75;
+    }
+    .nav-bar .content .items ul li a:hover{
+        opacity: 1;
+        font-size: 22px;
+    }
 }
 
 
