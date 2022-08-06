@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+.container{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(45, 42, 42);
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    height: 100%;
+}
+
+.footer .box{
+    flex-basis: 50%;
+    margin-bottom: 25px;
+}
+
+
+.abt-us{
+    margin-left: 5%;
+}
+
+.left h2{
+    margin: 20px 0px 20px 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.left p{
+    line-height: 25px;
+    text-align: justify;
+    width: 75%;
+}
+
+.social .icons{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 60%;
+}
+
+.left .abt-us .social a{
+    opacity: 0.5;
+    margin-right: 15%;
+    font-size: 23px;
+}
+
+
+.left .social a:hover{
+    opacity: 1;
+
+}
+
+
+.center .products{
+    margin-left: 25%;
+}
+.center .products h2{
+    margin: 20px 0px 20px 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.items a{
+    text-decoration: none;
+    display: flex;
+    line-height: 30px;
+    font-weight: 500;
+    opacity: .75;
+}
+
+.items a:hover{
+    opacity: 1;
+}
+.contact{
+    margin-left: 35%;
+    width: 75%;
+}
+
+.right h2{
+    margin: 20px 0px 20px 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.right .address{
+    line-height: 40px;
+}
+@media screen and (max-width:894px){
+    .contact{
+        margin-left: 15%;
+        width: 75%;
+    }
+}
